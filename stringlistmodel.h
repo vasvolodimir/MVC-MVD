@@ -17,6 +17,7 @@ public:
         QVariant headerData(int section, Qt::Orientation orientation, int role) const;
 
         // for read-write model
+        // ::flags - call by delegate for checking
         Qt::ItemFlags flags(const QModelIndex &index) const;
         bool setData(const QModelIndex &index, const QVariant &value, int role);
 
